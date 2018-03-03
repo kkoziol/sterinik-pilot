@@ -1,12 +1,12 @@
 package pl.sternik.kk.pilot;
 
-import pl.sternik.kk.pilot.comands.Command;
-import pl.sternik.kk.pilot.comands.menu.MenuDom;
-import pl.sternik.kk.pilot.comands.menu.MenuPilota;
-import pl.sternik.kk.pilot.comands.menu.MenuTv;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
+import pl.sternik.kk.pilot.comands.Command;
+import pl.sternik.kk.pilot.menu.MenuDom;
+import pl.sternik.kk.pilot.menu.MenuPilota;
+import pl.sternik.kk.pilot.menu.MenuTv;
 
 public class Pilot {
 
