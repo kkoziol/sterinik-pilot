@@ -1,6 +1,6 @@
 package pl.sternik.kk.pilot.wentylator;
 
-public interface WentylatorStan {
+interface WentylatorStan {
 	WentylatorStan wlacz();
 
     WentylatorStan wylacz();

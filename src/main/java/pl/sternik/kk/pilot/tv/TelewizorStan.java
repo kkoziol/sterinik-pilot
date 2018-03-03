@@ -1,6 +1,6 @@
 package pl.sternik.kk.pilot.tv;
 
-public interface TelewizorStan {
+interface TelewizorStan {
 	TelewizorStan wlacz();
 
 	TelewizorStan wylacz();

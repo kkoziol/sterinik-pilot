@@ -1,6 +1,6 @@
 package pl.sternik.kk.pilot.wentylator;
 
-public class WentylatorObroty3 implements WentylatorStan {
+class WentylatorObroty3 implements WentylatorStan {
 
     private Wentylator wentylator;
 

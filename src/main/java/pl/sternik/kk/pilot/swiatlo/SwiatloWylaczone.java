@@ -1,6 +1,6 @@
 package pl.sternik.kk.pilot.swiatlo;
 
-public class SwiatloWylaczone implements SwiatloStan {
+class SwiatloWylaczone implements SwiatloStan {
     
 	public void wlacz() {
         System.out.println("Włączam światło");

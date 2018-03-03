@@ -1,6 +1,6 @@
 package pl.sternik.kk.pilot.garaz;
 
-public class GarazZamkniety implements GarazStan {
+class GarazZamkniety implements GarazStan {
     
 	@Override
 	public void open() {

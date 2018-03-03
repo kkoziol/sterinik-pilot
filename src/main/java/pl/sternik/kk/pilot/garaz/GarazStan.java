@@ -1,6 +1,6 @@
 package pl.sternik.kk.pilot.garaz;
 
-public interface GarazStan {
+interface GarazStan {
     void open();
 
     void close();
