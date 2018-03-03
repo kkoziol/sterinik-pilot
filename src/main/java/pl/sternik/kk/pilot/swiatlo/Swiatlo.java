@@ -2,9 +2,9 @@ package pl.sternik.kk.pilot.swiatlo;
 
 public final class Swiatlo {
     private static Swiatlo instance = new Swiatlo();
-//    private final SwiatloStan wlaczone = new SwiatloWlaczone();
-//    private final SwiatloStan wylaczone = new SwiatloWylaczone();
-//    private SwiatloStan stanAktualny = wylaczone;
+    private final SwiatloStan wlaczone = new SwiatloWlaczone();
+    private final SwiatloStan wylaczone = new SwiatloWylaczone();
+    private SwiatloStan stanAktualny = wylaczone;
 
     private Swiatlo() {
         System.out.println("Tworzę sprzęt Swiatlo");
@@ -15,14 +15,12 @@ public final class Swiatlo {
     }
 
     public void wlacz() {
-        System.out.println("Włączam swiatło");
-//        stanAktualny.wlacz();
-//        stanAktualny = wlaczone;
+        stanAktualny.wlacz();
+        stanAktualny = wlaczone;
     }
-//
+
     public void wylacz() {
-        System.out.println("Wyłączam swiatło");
-//        stanAktualny.wylacz();
-//        stanAktualny = wylaczone;
+        stanAktualny.wylacz();
+        stanAktualny = wylaczone;
     }
 }
