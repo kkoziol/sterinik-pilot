@@ -1,7 +1,9 @@
 package pl.sternik.kk.pilot.tv;
 
 public final class Telewizor {
-	private static Telewizor instance = new Telewizor();
+	public final TelewizorStan WYLACZONY = new TelewizorWylaczony(this);
+    public final TelewizorStan WLACZONY = new TelewizorWlaczony(this);
+    private static Telewizor instance = new Telewizor();
 
 	private Telewizor() {
 		System.out.println("Tworzę sprzęt Telewizor");
