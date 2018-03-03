@@ -31,7 +31,7 @@ import pl.sternik.kk.pilot.comands.wentylator.CommandWentylatorWylacz;
 public class Pilot {
 
     private Map<String, Command> przyciski = new HashMap<>();
-    private int menu = 1;
+    private boolean menuTelewizyjne=true;
 
     public Pilot() {
         przelaczMenu();
@@ -85,8 +85,8 @@ public class Pilot {
 
     public void przelaczMenu() {
 
-        if (menu == 1) {
-            menu = 0;
+        if (menuTelewizyjne) {
+            menuTelewizyjne = false;
             przyciski.put("1", new CommandSwiatloWlacz());
             przyciski.put("2", new CommandSwiatloWylacz());
             przyciski.put("3", new CommandGarazOtworzDrzwi());
@@ -99,7 +99,7 @@ public class Pilot {
             przyciski.put("0", new CommandPrzelaczMenu(this));
             przyciski.put("Z", new CommandZakoncz());
         } else {
-            menu = 1;
+            menuTelewizyjne = true;
             przyciski.put("1", new CommandTelewizorWlacz());
             przyciski.put("2", new CommandTelewizorWylacz());
             przyciski.put("3", new CommandTelewizorGlosnoscPlus());
